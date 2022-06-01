@@ -1,0 +1,161 @@
+body {
+    background-color: #003545;
+    margin: 0px;
+}
+
+#page-container {
+    
+}
+
+#header {
+ height: 100px;
+ background-color: #ED6363;
+ 
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    margin: auto;
+}
+
+#display {
+    text-align: center;
+    font-size: 35px;
+    margin: 50px;
+}
+
+#content-wrap {
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: auto;
+    padding: 10px;
+}
+
+#gameboard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 450px;
+    width: 450px;
+    margin: auto;
+}
+
+.squares {
+     height: 150px;
+     width: 150px;
+     background-color: #003545;
+     padding: 10px;
+     border-color: white;
+     cursor: pointer;
+}
+
+.squares:hover {
+    background-color: teal;
+}
+
+#s1 {
+    border-top: 0px;
+    border-left: 0px;
+    text-align: center;
+    font-size: 120px;
+}
+
+#s2 {
+    border-top: 0px;
+    text-align: center;
+    font-size: 120px;
+}
+
+#s3 {
+    border-top: 0px;
+    border-right: 0px;
+    text-align: center;
+    font-size: 120px;
+}
+
+#s4 {
+    border-left: 0px;
+    text-align: center;
+    font-size: 120px;
+}
+
+#s5 {
+    text-align: center;
+    font-size: 120px;
+    
+}
+
+#s6 {
+    border-right: 0px;
+    text-align: center;
+    font-size: 120px;
+}
+
+#s7 {
+    border-left: 0px;
+    border-bottom: 0px;
+    text-align: center;
+    font-size: 120px;
+}
+
+#s8 {
+    border-bottom: 0px;
+    text-align: center;
+    font-size: 120px;
+}
+
+#s9 {
+    border-right: 0px;
+    border-bottom: 0px;
+    text-align: center;
+    font-size: 120px;
+}
+
+#btn-choices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+#newPlayer {
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+#twoPlayer {
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+#restart {
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #00454A;
+    padding-top: 25px;
+    font-family: sans-serif;
+
+}

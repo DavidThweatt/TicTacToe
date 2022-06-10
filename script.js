@@ -63,49 +63,49 @@ const creatPlayer = (name, marker) => {
     if (
       (s1.innerHTML === "X" || s1.innerHTML === "O") &&
       s1.innerHTML === s2.innerHTML &&
-      s3.innerHTML
+      s1.innerHTML === s3.innerHTML
     ) {
       gameOver(s1.innerHTML);
     } else if (
       (s4.innerHTML === "X" || s4.innerHTML === "O") &&
       s4.innerHTML === s5.innerHTML &&
-      s6.innerHTML
+      s4.innerHTML === s6.innerHTML
     ) {
       gameOver(s4.innerHTML);
     } else if (
       (s7.innerHTML === "X" || s7.innerHTML === "O") &&
       s7.innerHTML === s8.innerHTML &&
-      s9.innerHTML
+      s7.innerHTML === s9.innerHTML
     ) {
       gameOver(s7.innerHTML);
     } else if (
       (s1.innerHTML === "X" || s1.innerHTML === "O") &&
       s1.innerHTML === s4.innerHTML &&
-      s7.innerHTML
+      s1.innerHTML === s7.innerHTML
     ) {
       gameOver(s1.innerHTML);
     } else if (
       (s2.innerHTML === "X" || s2.innerHTML === "O") &&
       s2.innerHTML === s5.innerHTML &&
-      s8.innerHTML
+      s2.innerHTML === s8.innerHTML
     ) {
       gameOver(s2.innerHTML);
     } else if (
       (s3.innerHTML === "X" || s3.innerHTML === "O") &&
       s3.innerHTML === s6.innerHTML &&
-      s9.innerHTML
+      s3.innerHTML === s9.innerHTML
     ) {
       gameOver(s3.innerHTML);
     } else if (
       (s1.innerHTML === "X" || s1.innerHTML === "O") &&
       s1.innerHTML === s5.innerHTML &&
-      s9.innerHTML
+      s1.innerHTML === s9.innerHTML
     ) {
       gameOver(s1.innerHTML);
     } else if (
       (s3.innerHTML === "X" || s3.innerHTML === "O") &&
       s3.innerHTML === s5.innerHTML &&
-      s7.innerHTML
+      s3.innerHTML === s7.innerHTML
     ) {
       gameOver(s3.innerHTML);
     }

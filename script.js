@@ -1,5 +1,5 @@
-//Creat Players
-const creatPlayer = (name, marker) => {
+//Create Players
+const createPlayer = (name, marker) => {
   return { name, marker };
 };
 
@@ -18,9 +18,9 @@ const creatPlayer = (name, marker) => {
   const Display = document.getElementById("display");
   const squares = document.getElementsByClassName("squares");
   const restart = document.getElementById("restart");
+  let nextTurn = "X";
 
   // player turns
-  let nextTurn = "X";
 
   function changeTurn() {
     if (nextTurn == "X") {

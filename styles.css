@@ -5,6 +5,9 @@
 body {
   background-color: #c8c6c6;
   margin: 0px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 #header {
@@ -28,18 +31,23 @@ h1 {
 #content-wrap {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
   margin: auto;
-  padding: 10px;
 }
 
-#gameboard {
+#game_board {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   height: 450px;
   width: 450px;
-  margin: auto;
+  margin: 2em auto;
+}
+
+@media only screen and (max-width: 500px) {
+  #game_board {
+    height: 347.5px;
+    width: 347.5px;
+  }
 }
 
 .squares {
@@ -49,6 +57,16 @@ h1 {
   padding: 10px;
   border-color: white;
   cursor: pointer;
+  font-size: 7.5rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .squares {
+    height: 115.5px;
+    width: 115.5px;
+    font-size: 5.5rem;
+  }
 }
 
 .squares:hover {
@@ -58,58 +76,37 @@ h1 {
 #s1 {
   border-top: 0px;
   border-left: 0px;
-  text-align: center;
-  font-size: 120px;
 }
 
 #s2 {
   border-top: 0px;
-  text-align: center;
-  font-size: 120px;
 }
 
 #s3 {
   border-top: 0px;
   border-right: 0px;
-  text-align: center;
-  font-size: 120px;
 }
 
 #s4 {
   border-left: 0px;
-  text-align: center;
-  font-size: 120px;
-}
-
-#s5 {
-  text-align: center;
-  font-size: 120px;
 }
 
 #s6 {
   border-right: 0px;
-  text-align: center;
-  font-size: 120px;
 }
 
 #s7 {
   border-left: 0px;
   border-bottom: 0px;
-  text-align: center;
-  font-size: 120px;
 }
 
 #s8 {
   border-bottom: 0px;
-  text-align: center;
-  font-size: 120px;
 }
 
 #s9 {
   border-right: 0px;
   border-bottom: 0px;
-  text-align: center;
-  font-size: 120px;
 }
 
 #btn-choices {
@@ -153,12 +150,10 @@ h1 {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
+  margin-top: auto;
   width: 100%;
-  height: 50px;
+  min-height: 50px;
   text-align: center;
   background-color: #c8c6c6;
   padding-top: 25px;
-  font-family: sans-serif;
 }
